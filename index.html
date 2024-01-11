@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Forest Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Forest Predictor</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age (5-years gap):</label>
+        <input type="text" id="age" name="1" required><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height" name="2" required><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" name="3" required><br>
+
+        <label for="waist">Waist (cm):</label>
+        <input type="text" id="waist" name="4" required><br>
+
+        <label for="eyesight_left">Eyesight (left):</label>
+        <input type="text" id="eyesight_left" name="5" required><br>
+
+        <label for="eyesight_right">Eyesight (right):</label>
+        <input type="text" id="eyesight_right" name="6" required><br>
+
+        <label for="hearing_left">Hearing (left):</label>
+        <input type="text" id="hearing_left" name="7" required><br>
+
+        <label for="hearing_right">Hearing (right):</label>
+        <input type="text" id="hearing_right" name="8" required><br>
+
+        <label for="systolic">Systolic (Blood pressure):</label>
+        <input type="text" id="systolic" name="9" required><br>
+
+        <label for="diastolic">Diastolic (Blood pressure):</label>
+        <input type="text" id="diastolic" name="10" required><br>
+
+        <label for="fasting_blood_sugar">Fasting blood sugar:</label>
+        <input type="text" id="fasting_blood_sugar" name="11" required><br>
+
+        <label for="cholesterol_total">Cholesterol (total):</label>
+        <input type="text" id="cholesterol_total" name="12" required><br>
+
+        <label for="triglyceride">Triglyceride:</label>
+        <input type="text" id="triglyceride" name="13" required><br>
+
+        <label for="hdl">HDL (cholesterol type):</label>
+        <input type="text" id="hdl" name="14" required><br>
+
+        <label for="ldl">LDL (cholesterol type):</label>
+        <input type="text" id="ldl" name="15" required><br>
+
+        <label for="hemoglobin">Hemoglobin:</label>
+        <input type="text" id="hemoglobin" name="16" required><br>
+
+        <label for="urine_protein">Urine protein:</label>
+        <input type="text" id="urine_protein" name="17" required><br>
+
+        <label for="serum_creatinine">Serum creatinine:</label>
+        <input type="text" id="serum_creatinine" name="18" required><br>
+
+        <label for="ast">AST:</label>
+        <input type="text" id="ast" name="19" required><br>
+
+        <label for="alt">ALT:</label>
+        <input type="text" id="alt" name="20" required><br>
+
+        <label for="gtp">GTP:</label>
+        <input type="text" id="gtp" name="21" required><br>
+
+        <label for="dental_caries">Dental caries:</label>
+        <input type="text" id="dental_caries" name="22" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
